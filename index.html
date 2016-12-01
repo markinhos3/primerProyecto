@@ -6,1030 +6,122 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
 
-        <!-- FUENTE PROPIA: desde googlefont -->
-
         <style>
             @import url('https://fonts.googleapis.com/css?family=Raleway:300');
         </style>
 
         <!-- HOJA DE ESTILO PROPIA: archivo CSS propio -->
 
-        <link rel="stylesheet" href="css/estilos.css" >
+        <!-- <link rel="stylesheet" href="css/estilos.css" /> -->
+                
+        <!-- CÓDIGO JQUERYMOBILE GENERADO archivos CSS y JS desde jQuery : PERSONALIZADO -->
 
-        
-        <!-- JQUERY: archivo JS desde Google CDN -->
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-        <!-- JQUERYMOBILE: archivos CSS y JS desde jQuery CDN -->
-        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
+        <link rel="stylesheet" href="css/themes/app_floristeria.min.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
 
     </head>
     <body>
 
-        
-        <!-- PAG 1 -->
+        <!-- LOGIN PAGE -->
 
-        
-
-    <div data-role="page" id="p1">
-
-        <!-- HEADER -->
-                <div data-role="header">
-                    <div class="top">
-
+        <div data-role="page" id="login">
+            <div data-role="header" data-theme="a">
+                <!-- HEADER -->
+                <div class="top">
                         <div class="logo">
-                            <a href="#p1" data-transition="flip"> <img alt="logo florístería valdi" src="imagenes/logo.png" height="200" width="300"/>
+                            <a href="#login" data-transition="flip"> <img alt="logo florístería valdi" src="imagenes/logo.png" height="200" width="300"/>
                             </a>
-
                         </div>
-
                         <div class="contacto">
-
                             <p class="datos_head" align="center"> 
                                 Dirección: Av. de los Guindos </p>
                                 <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-                            
                             <p align="center"> Tlfno Contacto: +34 65.4563.5 </p>
                                 <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-
-                                <p align="center"> Email: floristeria_valdi@contacto.com </p>
-
+                            <p align="center"> Email: floristeria_valdi@contacto.com </p>
                         </div>
-
                     </div>
-
                     <hr size="3px"; width= 90% align=center >
               </div>
-              <br/><br/>
-            <!-- MAIN -->
-
-            <div data-role="main" class="ui-content">
-                <div class="mensajes">
-                        <form id="sms" name="sms" method="POST">
-
-                            <fieldset>
-                                
-                                <legend> <strong>Elige un Mensaje</strong></legend>
-
-                                <br/>
-
-                                <label for="mensajes1">
-                                <input type="radio" id="mensajes1" name="message" /> A la Mejor Madre del Mundo!
-                                </label>
-
-                                <br/><br/>
-
-                                <label for="mensajes2">
-                                    <input type="radio" id="mensajes2" name="message" /> Al Tío Más Way del Paraway!
-                                </label>
-
-                                <br/><br/>
-
-                                <label for="mensajes3">
-                                    <input type="radio" id="mensajes3" name="message" /> Por una Segunda Oportunidad
-                                </label>
-
-                                <br/><br/>
-
-                                <label for="mensajes4">
-                                    <input type="radio" id="mensajes4" name="message" /> Hoy por Ti Mañana por Mi!
-                                </label>
-
-                                <br/><br/><br/>
-
-                                <legend><strong>Crealo tú mismo</strong></legend>
-                                <br/>
-                                
-                                <input type="checkbox" id="check1" onclick="personalizado();" name="check1"/>
-                                <br/>
-                                <textarea id="txMensaje" name="txMensaje"  placeholder="Exprésalo en menos de 250 caracteres" cols="142" rows="10"></textarea>
-                                
-                            </fieldset>
-
-                        </form>
-                 <a href="#p2" data-transition="pop" class="ui-btn"> IR a Dirección de Facturación </a>
-               </div>
-                
-            </div>
-
-            <!-- FOOTER -->
-
-            <div data-role="footer">
-                <div class="pie_mensajes">
-
-                    <div class="rrss">
-
-                        <img alt="linkedin" src="imagenes/in.png" height="30" width="30">
-                        <img alt="twitter" src="imagenes/tw.png" height="30" width="30">
-                        <img alt="facebook" src="imagenes/fb.png" height="30" width="30">
-                        <img alt="web" src="imagenes/web.png" height="30" width="30">
-                    
-                    </div>
-
-                    <div class="copyright">
-
-                        <h4> © Copyright 2016 ~ Marcos Valdi | Política de Cookies‎ | Aviso Legal | floristeria_valdi@contacto.com </h4>
-
-                    </div>
-
-                    <div class="solo_logo">
-
-                        <a href="#p1" data-transition="flip"> <img alt="logo florístería Valdi" src="imagenes/solo_logo.png" height="70" width="110"> </a>
-
-                    </div>
-
-                </div>           
-            
-            </div>
-    </div>
-
-        <!-- ********************************   PAG 2: Dir de Facturación   ********************************************************************** -->
-
-        
-
-    <div data-role="page" id="p2">
-        <!-- HEADER -->
-               <div data-role="header">
-                    <div class="top">
-
-                        <div class="logo">
-
-                            <a href="#p1" data-transition="flip"> <img alt="logo florístería valdi" src="imagenes/logo.png" height="200" width="300"/>
-                            </a>
-
-                        </div>
-
-                        <div class="contacto">
-
-                            <p class="datos_head" align="center"> 
-                                Dirección: Av. de los Guindos </p>
-                                <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-                            
-                            <p align="center"> Tlfno Contacto: +34 65.4563.5 </p>
-                                <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-
-                                <p align="center"> Email: floristeria_valdi@contacto.com </p>
-
-                        </div>
-
-                    </div>
-
-                    <hr size="3px"; width= 90% align=center >
-               </div>
-
-            
-
-            <!-- MAIN -->
-
-            <div data-role="main" class="ui-content">
-                <div class="facturacion">
-
-                <form id="factura" name="factura" method="POST">
-                    <div class="well">
-                    <fieldset>
-
-                        <legend> <strong>Rellene los siguientes DATOS de FACTURACIÓN</strong></legend>
-
-                        <br/>
-
-                        <label>
-                             <strong>Nombre*</strong>: <input type="text" id="nombre" name="nombre" size="30" maxlength="30" required placeholder="máx 30 caracteres"> 
-                        </label>
-
-                        <br/><br/>
-
-                        <label>
-                              <strong>Apellidos*</strong>: <input type="text" id="apellidos" name="apellidos" size="60" maxlength="60"  placeholder="máx 60 caracteres" required > 
-                        </label>
-
-                        <br/><br/>
-
-                         <label>
-                                <strong>Dirección de Facturación*</strong>: <input type="text" id="domicilio" name="domicilio" size="100" maxlength="100" placeholder="máx 100 caracteres" required > 
-                        </label>
-
+              <!-- MAIN -->
+              <div data-role="main" class="ui-content" style="width: 30%; margin-left: 34%;">
+                  <div class="formulario">
+                     <form id="form" name="form" method="POST"  >
+                         <label for="user" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user"> <strong> Usuario </strong> 
+                         </label>
+                         <input type="text" id="user" name="user" data-clear-btn="true" placeholder="Usuario"  >
                          <br/><br/>
-
-                         <label>
-                              <strong>C.P.</strong>: <input type="text" id="cpostal" name="cpostal" size="30" maxlength="30" placeholder="máx 30 caracteres"> 
-                        </label>
-
-                        <br/><br/>
-
-                         <label>
-                              <strong>Tlfno.*</strong>: <input type="text" id="telefono" name="telefono" size="12" maxlength="12" placeholder="máx 12 caracteres" required> 
-                        </label>
-
-                        <br/><br/>
-
-                         <label>
-                             <strong>Provincia*</strong>: <select id="ciudad" name="ciudad" required>
-
-                                            <option value="malaga" > Málaga </option>
-                                            <option value="granada" selected> Granada </option>
-                                            <option value="huelva" > Huelva </option>
-                                            <option value="almeria" > Almería </option>
-                                            <option value="jaen" > Jaén </option>
-                                            <option value="cordoba" > Córdoba </option>
-                                            <option value="sevilla" > Sevilla </option>
-                                            <option value="cadiz" > Cádiz </option>
-
-                                        </select>
-                        </label>
-
-                    </fieldset>
-                    </div>
-                </form>
-                <a href="#p3" data-transition="pop" class="ui-btn"> IR a Dirección de Envío </a>
-            </div>
-
-                
+                         <label for="pass" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check"> <strong> Contraseña </strong> </label> 
+                         <input type="text" id="pass" name="pass" data-clear-btn="true" placeholder="Contraseña" >
+                         <div style="margin-top: 1em;">
+                            <a href="#menu" data-transition="pop" class="ui-btn">ADÉNTRATE </a>
+                         </div>
+                     </form>
+                  </div>
+              </div>
+              <!-- FOOTER -->
+              <div data-role="footer" data-position="fixed">
+                  <div data-role="navbar" data-iconpos="top">
+                      <ul>
+                        <li><a data-transition="pop" data-icon="phone" id="contact" href="#contactar">LLAMAR</a></li>
+                        <li><a data-transition="pop" data-icon="shop" id="ask" href="#pedido">HAZ TU PEDIDO</a></li>
+                        <li><a href="http://www.marcosvaldi.com/" data-transition="pop" data-icon="home" data-rel="dialog">WEB</a></li>
+                    </ul>
+                  </div>
+              </div>
         </div>
 
-            <!-- FOOTER -->
+        <!-- MENU PAGE -->
 
-            <div data-role="footer">
-                <div class="pie_mensajes">
-
-                    <div class="rrss">
-
-                        <img alt="linkedin" src="imagenes/in.png" height="30" width="30">
-                        <img alt="twitter" src="imagenes/tw.png" height="30" width="30">
-                        <img alt="facebook" src="imagenes/fb.png" height="30" width="30">
-                        <img alt="web" src="imagenes/web.png" height="30" width="30">
-                    
-                    </div>
-
-                    <div class="copyright">
-
-                        <h4> © Copyright 2016 ~ Marcos Valdi | Política de Cookies‎ | Aviso Legal | floristeria_valdi@contacto.com </h4>
-
-                    </div>
-
-                    <div class="solo_logo">
-
-                        <a href="#p1" data-transition="flip"> <img alt="logo florístería Valdi" src="imagenes/solo_logo.png" height="70" width="110"> </a>
-
-                    </div>
-
-                </div>      
-                
-            </div>
-        </div>
-
-
-        <!-- +++++++++++++++++++ PAG 3: DIRECCIÓN DE ENVÍO ++++++++++++++++++ -->
-
-       
-
-    <div data-role="page" id="p3">
-                 <!-- HEADER -->
-                <div data-role="header">
-                    <div class="top">
-
+        <div data-role="page" id="menu">
+           <div data-role="header" data-theme="a">
+                <!-- HEADER -->
+                <div class="top">
                         <div class="logo">
-
-                            <a href="#p1" data-transition="flip"> <img alt="logo florístería valdi" src="imagenes/logo.png" height="200" width="300"/>
+                            <a href="#login" data-transition="flip"> <img alt="logo florístería valdi" src="imagenes/logo.png" height="200" width="300"/>
                             </a>
-
                         </div>
-
                         <div class="contacto">
-
                             <p class="datos_head" align="center"> 
                                 Dirección: Av. de los Guindos </p>
                                 <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-                            
                             <p align="center"> Tlfno Contacto: +34 65.4563.5 </p>
                                 <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-
-                                <p align="center"> Email: floristeria_valdi@contacto.com </p>
-
+                            <p align="center"> Email: floristeria_valdi@contacto.com </p>
                         </div>
-
                     </div>
-
                     <hr size="3px"; width= 90% align=center >
-                    
-                </div>
-
-            
-
-            <!-- MAIN -->
-
-            <div data-role="main" class="ui-content">
-                <div class="dir_envio">
-
-                <form id="dir" name="dir" method="POST">
-                    <div class="well">
-                    <fieldset>
-
-                        <legend> <strong>Dirección de Facturación ACTUAL</strong></legend>
-
-                        <br/>
-
-                        <label for="check2">
-                             <input type="checkbox" onclick="copiarFactura();" id="check2" name="check2" > Confirmar datos ya introducidos
-                        </label>
-
-                        <br/><br/>
-                        <br/><br/>
-                        
-                   
-
-                        <legend> <strong>Cambiar DATOS de FACTURACIÓN</strong></legend>
-                        
-                        <br/>
-
-                       <label>
-                             <strong>Nombre*</strong>: <input type="text" id="nombre2" name="nombre2" size="30" maxlength="30" required placeholder="máx 30 caracteres"> 
-                        </label>
-
-                        <br/><br/>
-
-                        <label>
-                              <strong>Apellidos*</strong>: <input type="text" id="apellidos2" name="apellidos2" size="60" maxlength="60"  placeholder="máx 60 caracteres" required > 
-                        </label>
-
-                        <br/><br/>
-
-                         <label>
-                                <strong>Dirección de Facturación*</strong>: <input type="text" id="domicilio2" name="domicilio2" size="100" maxlength="100" placeholder="máx 100 caracteres" required > 
-                        </label>
-
+              </div>
+              <!-- MAIN -->
+              <div data-role="main" class="ui-content" style="width: 30%; margin-left: 34%;">
+                  <div class="formulario">
+                     <form id="form" name="form" method="POST"  >
+                         <label for="user" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user"> <strong> Usuario </strong> 
+                         </label>
+                         <input type="text" id="user" name="user" data-clear-btn="true" placeholder="Usuario"  >
                          <br/><br/>
-
-                         <label>
-                              <strong>C.P.</strong>: <input type="text" id="cpostal2" name="cpostal2" size="30" maxlength="30" placeholder="máx 30 caracteres"> 
-                        </label>
-
-                        <br/><br/>
-
-                         <label>
-                              <strong>Tlfno.*</strong>: <input type="text" id="telefono2" name="telefono2" size="12" maxlength="12" placeholder="máx 12 caracteres" required> 
-                        </label>
-
-                        <br/><br/>
-
-                         <label>
-                             <strong>Provincia*</strong>: <select id="ciudad2" name="ciudad2" required>
-
-                                            <option value="malaga" > Málaga </option>
-                                            <option value="granada" selected> Granada </option>
-                                            <option value="huelva" > Huelva </option>
-                                            <option value="almeria" > Almería </option>
-                                            <option value="jaen" > Jaén </option>
-                                            <option value="cordoba" > Córdoba </option>
-                                            <option value="sevilla" > Sevilla </option>
-                                            <option value="cadiz" > Cádiz </option>
-
-                                        </select>
-                        </label>
-
-                    </fieldset>
-                     </div>
-                </form>
-                <a href="#p4" data-transition="pop" class="ui-btn"> IR a Fecha de Envío </a>
-            </div> 
-                
-            </div>
-
-            <!-- FOOTER -->
-
-            <div data-role="footer">
-                <div class="pie_mensajes">
-
-                    <div class="rrss">
-
-                        <img alt="linkedin" src="imagenes/in.png" height="30" width="30">
-                        <img alt="twitter" src="imagenes/tw.png" height="30" width="30">
-                        <img alt="facebook" src="imagenes/fb.png" height="30" width="30">
-                        <img alt="web" src="imagenes/web.png" height="30" width="30">
-                    
-                    </div>
-
-                    <div class="copyright">
-
-                        <h4> © Copyright 2016 ~ Marcos Valdi | Política de Cookies‎ | Aviso Legal | floristeria_valdi@contacto.com </h4>
-
-                    </div>
-
-                    <div class="solo_logo">
-
-                        <a href="#p1" data-transition="flip"> <img alt="logo florístería Valdi" src="imagenes/solo_logo.png" height="70" width="110"> </a>
-
-                    </div>
-
-                </div>      
-                
-            </div>
-    </div>
-
-        <!-- ++++++++++++++++++++++++++++++ PAG 4: FECHA DE ENVÍO +++++++++++++++++++++++ -->
-
-    <div data-role="page" id="p4">
-                <!-- HEADER -->
-               <div data-role="header">
-                   <div class="top">
-
-                        <div class="logo">
-
-                            <a href="#p1" data-transition="flip"> <img alt="logo florístería valdi" src="imagenes/logo.png" height="200" width="300"/>
-                            </a>
-
-                        </div>
-
-                        <div class="contacto">
-
-                            <p class="datos_head" align="center"> 
-                                Dirección: Av. de los Guindos </p>
-                                <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-                            
-                            <p align="center"> Tlfno Contacto: +34 65.4563.5 </p>
-                                <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-
-                                <p align="center"> Email: floristeria_valdi@contacto.com </p>
-
-                        </div>
-
-                    </div>
-
-                    <hr size="3px"; width= 90% align=center >
-               </div>
-
-            <!-- MAIN -->
-
-            <div data-role="main" class="ui-content">
-                <div class="fecha_envio">
-
-                <form id="fecha" name="fecha" method="POST">
-                    <div class="well">
-                    
-
-                        <br/>
-                        <legend> <strong>Fecha de ENVÍO</strong></legend>
-
-                        <br/>
-
-                         <label class="borde_fecha">
-                             <strong> Día: </strong> <select id="diaEntrega" name="diaEntrega" required>
-
-                                            
-                                            
-                                        </select>
-                                </label>
-                                <br/> <br/> <br/>
-
-                                <label class="borde_fecha">
-
-                                        <strong> Mes: </strong>
-                                        
-                                        <select id="mesEntrega" onchange="actualizarDias();"  required>
-
-                                            <option value="1" > Enero </option>
-                                            <option value="2" > Febrero </option>
-                                            <option value="3" > Marzo </option>
-                                            <option value="4" > Abril </option>
-                                            <option value="5" > Mayo </option>
-                                            <option value="6" > Junio </option>
-                                            <option value="7" > Julio </option>
-                                            <option value="8" > Agosto </option>
-                                            <option value="9" > Septiembre </option>
-                                            <option value="10" > Octubre </option>
-                                            <option value="11" > Noviembre </option>
-                                            <option value="12" > Diciembre </option>
-                                            
-                                        </select>
-
-                                </label>
-                                <br/> <br/> <br/>
-
-                                <label class="borde_fecha">
-
-                                         <strong> Año: </strong>
-                                            <select id="yearEntrega" name="yearEntrega" required>
-
-                                                <option value="2016" > 2016 </option>
-                                                <option value="2017" > 2017 </option>
-                                                <option value="2018" > 2018 </option>
-                                                
-                                            </select>
-                                </label>
-                        <br/><br/><br/><br/>
-
-                    
-                    </div>
-
-                </form>
-                <a href="#p5" data-transition="pop" class="ui-btn"> IR a Forma de Pago </a>
-            </div>
-                
-            </div>
-
-            <!-- FOOTER -->
-
-            <div data-role="footer">
-                <div class="pie_mensajes">
-
-                    <div class="rrss">
-
-                        <img alt="linkedin" src="imagenes/in.png" height="30" width="30">
-                        <img alt="twitter" src="imagenes/tw.png" height="30" width="30">
-                        <img alt="facebook" src="imagenes/fb.png" height="30" width="30">
-                        <img alt="web" src="imagenes/web.png" height="30" width="30">
-                    
-                    </div>
-
-                    <div class="copyright">
-
-                        <h4> © Copyright 2016 ~ Marcos Valdi | Política de Cookies‎ | Aviso Legal | floristeria_valdi@contacto.com </h4>
-
-                    </div>
-
-                    <div class="solo_logo">
-
-                        <a href="#p1" data-transition="flip"> <img alt="logo florístería Valdi" src="imagenes/solo_logo.png" height="70" width="110"> </a>
-
-                    </div>
-
-                </div>      
-                
-            </div>
+                         <label for="pass" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-check"> <strong> Contraseña </strong> </label> 
+                         <input type="text" id="pass" name="pass" data-clear-btn="true" placeholder="Contraseña" >
+                         <div style="margin-top: 1em;">
+                            <a href="#menu" data-transition="pop" class="ui-btn">ADÉNTRATE </a>
+                         </div>
+                     </form>
+                  </div>
+              </div>
+              <!-- FOOTER -->
+              <div data-role="footer" data-position="fixed">
+                  <div data-role="navbar" data-iconpos="top">
+                      <ul>
+                        <li><a data-transition="pop" data-icon="phone" id="contact" href="#contactar">LLAMAR</a></li>
+                        <li><a data-transition="pop" data-icon="shop" id="ask" href="#pedido">HAZ TU PEDIDO</a></li>
+                        <li><a href="http://www.marcosvaldi.com/" data-transition="pop" data-icon="home" data-rel="dialog">WEB</a></li>
+                    </ul>
+                  </div>
+              </div>
         </div>
-
-        <!-- ++++++++++++++++++++++++++++ PAG 5: FORMA DE PAGO ++++++++++++++++++++++++++++ -->
-
-        
-
-    <div data-role="page" id="p5">
-                <!-- HEADER -->
-                <div data-role="header">
-                    <div class="top">
-
-                        <div class="logo">
-
-                            <a href="#p1" data-transition="flip"> <img alt="logo florístería valdi" src="imagenes/logo.png" height="200" width="300"/>
-                            </a>
-
-                        </div>
-
-                        <div class="contacto">
-
-                            <p class="datos_head" align="center"> 
-                                Dirección: Av. de los Guindos </p>
-                                <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-                            
-                            <p align="center"> Tlfno Contacto: +34 65.4563.5 </p>
-                                <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-
-                                <p align="center"> Email: floristeria_valdi@contacto.com </p>
-
-                        </div>
-
-                    </div>
-
-                    <hr size="3px"; width= 90% align=center >
-                </div>
-
-            <!-- MAIN -->
-
-            <div data-role="main" class="ui-content">
-                <div class="forma_pago">
-                <form id="pago" name="pago" method="POST">
-                    <div class="well">
-                    <fieldset>
-
-                        <legend> <strong> Elija la forma de PAGO </strong> </legend>
-
-                        <br/>
-
-                        <label>
-                        <input type="radio" name="tarjeta" value="mastercard"> MasterCard
-                        <img class="img-thumbnail" alt="tarjeta mastercard" src="imagenes/mastercard.png" height="50" width="70">
-                        </label>
-
-                        <br/><br/>
-
-                        <label>
-                            <input type="radio" name="tarjeta" value="visa"> Visa
-                            <img class="img-thumbnail" alt="tarjeta visa" src="imagenes/visa.png" height="50" width="70">
-                        </label>
-
-                        <br/><br/>
-
-                        <label>
-                            <input type="radio" name="tarjeta" value="american"> American Express
-                            <img class="img-thumbnail" alt="tarjeta american" src="imagenes/american.png" height="50" width="70">
-                        </label>
-
-                    </fieldset>
-                    </div>
-
-                    <br/><br/><br/>
-                    <div class="well">
-                    <fieldset>
-                        <legend> <strong> Datos de la TARJETA </strong> </legend>
-
-                        <br/>
-
-                         <label>
-                             <strong>Nº Tarjeta de Crédito*</strong>: <input type="text" name="nombre" size="30" maxlength="30" required placeholder="máx 30 caracteres"> 
-                        </label>
-
-                        <br/><br/><br/>
-
-                        <label>
-                              <strong>Fecha Caducidad*</strong>: 
-                              <br/><br/>
-
-                                      <label> <strong> MES: </strong> 
-                                          <select  class="caducidad" required>
-
-                                            <option value="enero" > Enero </option>
-                                            <option value="febrero" > Febrero </option>
-                                            <option value="marzo" > Marzo </option>
-                                            <option value="abril" > Abril </option>
-                                            <option value="mayo" > Mayo </option>
-                                            <option value="junio" > Junio </option>
-                                            <option value="julio" > Julio </option>
-                                            <option value="agosto" > Agosto </option>
-                                            <option value="septiembre" > Septiembre </option>
-                                            <option value="octubre" > Octubre </option>
-                                            <option value="noviembre" > Noviembre </option>
-                                            <option value="diciembre" > Diciembre </option>
-                                            
-                                        </select>
-                                      </label>
-                                <br/><br/>
-
-                                      <label> <strong> AÑO: </strong>
-
-                                        <select  class="caducidad" required>
-
-                                            <option value="2016" > 2016 </option>
-                                            <option value="2017" > 2017 </option>
-                                            <option value="2018" > 2018 </option>
-                                            <option value="2019" > 2019 </option>
-                                            <option value="2020" > 2020 </option>
-                                            
-                                        </select>
-                                      </label>
-
-                        </label>
-
-                        <br/><br/><br/>
-
-                        <label>
-                                <strong> <acronym title="Hace referencia a las 3 cifras de la parte posterior de la tarjeta de crédito">  CVV(info)* </acronym> </strong> : <input type="text" name="cvv" size="3" maxlength="3" placeholder="máx 3 caracteres" required > 
-                                       
-                        </label>                       
-
-                    </fieldset>
-                    </div>
-                </form>
-                <a href="#p6" data-transition="pop" class="ui-btn"> IR a Crear Cuenta </a>
-
-                <br/><br/><br/>
-            </div>
-                
-            </div>
-
-            <!-- FOOTER -->
-
-            <div data-role="footer">
-                 <div class="pie_mensajes">
-
-                    <div class="rrss">
-
-                        <img alt="linkedin" src="imagenes/in.png" height="30" width="30">
-                        <img alt="twitter" src="imagenes/tw.png" height="30" width="30">
-                        <img alt="facebook" src="imagenes/fb.png" height="30" width="30">
-                        <img alt="web" src="imagenes/web.png" height="30" width="30">
-                    
-                    </div>
-
-                    <div class="copyright">
-
-                        <h4> © Copyright 2016 ~ Marcos Valdi | Política de Cookies‎ | Aviso Legal | floristeria_valdi@contacto.com </h4>
-
-                    </div>
-
-                    <div class="solo_logo">
-
-                        <a href="#p1" data-transition="flip"> <img alt="logo florístería Valdi" src="imagenes/solo_logo.png" height="70" width="110"> </a>
-
-                    </div>
-
-                </div>   
-                
-            </div>
-        </div>
-
-        <!-- +++++++++++++++++++++++++ PAG 6: CREAR CUENTA ++++++++++++++++++++ -->
-
-        <!-- HEADER -->
-
-            <div data-role="page" id="p6">
-                <div data-role="header">
-                    <div class="top">
-
-                        <div class="logo">
-
-                            <a href="#p1" data-transition="flip"> <img alt="logo florístería valdi" src="imagenes/logo.png" height="200" width="300"/>
-                            </a>
-
-                        </div>
-
-                        <div class="contacto">
-
-                            <p class="datos_head" align="center"> 
-                                Dirección: Av. de los Guindos </p>
-                                <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-                            
-                            <p align="center"> Tlfno Contacto: +34 65.4563.5 </p>
-                                <hr size="2px" width="60%" noshade="noshade" align="center" height= 80%;>
-
-                                <p align="center"> Email: floristeria_valdi@contacto.com </p>
-
-                        </div>
-
-                    </div>
-
-                    <hr size="3px"; width= 90% align=center >
-                </div>
-
-            
-            <!-- MAIN -->
-
-            <div data-role="main" class="ui-content">
-                <div class="frase">
-                
-                <h2 class="crear"> Para poder realizar el PEDIDO correctamente, debe CREARSE una Cuenta </h2>
-
-                <br/><br/>
-
-                <form id="campos" name="campos" method="POST">
-                    <div class="well">
-                    <fieldset>
-
-                        <legend><strong> Crear Cuenta </strong></legend>
-
-                        <br/>
-
-                            <label>
-
-                                <strong> E-Mail*</strong>: <input type="email" name="correo" value="" size="50" maxlength="50" placeholder="máx 50 caracteres" required>
-
-                            </label>
-
-                            <br/><br/>
-
-                            <label>
-
-                              <strong> Password*</strong>: <input type="text" id="password1" name="password1" value="" size="12" maxlength="12" placeholder="máx 12 caracteres" required>
-
-                            </label>
-
-                            <br/><br/>
-
-                            <label>
-
-                              <strong> Repite Password*</strong>: <input type="text" id="password2" name="password2"  size="12" maxlength="12" placeholder="máx 12 caracteres" required>
-
-                            </label>
-
-                            <br/><br/>
-
-                            <div class="boton_registro">
-
-                                <button class="boton_pedido" type="submit" onclick="validar();"> CREAR! </button>
-
-                            </div>
-                    
-                    </fieldset>
-                    </div>
-                </form>
-
-                <div class="hacer_pedido">
-
-                    <button class="boton_pedido" type="submit" onclick="hacer_pedido();"> LO QUIERO! </button>
-
-                </div>
-                <br/><br/>
-                <a href="#p1" data-transition="flow" class="ui-btn"> VUELVE A EMPEZAR </a>
-                
-            </div>
-                
-            </div>
-
-            <!-- FOOTER -->
-
-            <div data-role="footer">
-                 <div class="pie_mensajes">
-
-                    <div class="rrss">
-
-                        <img alt="linkedin" src="imagenes/in.png" height="30" width="30">
-                        <img alt="twitter" src="imagenes/tw.png" height="30" width="30">
-                        <img alt="facebook" src="imagenes/fb.png" height="30" width="30">
-                        <img alt="web" src="imagenes/web.png" height="30" width="30">
-                    
-                    </div>
-
-                    <div class="copyright">
-
-                        <h4> © Copyright 2016 ~ Marcos Valdi | Política de Cookies‎ | Aviso Legal | floristeria_valdi@contacto.com </h4>
-
-                    </div>
-
-                    <div class="solo_logo">
-
-                        <a href="#p1" data-transition="flip"> <img alt="logo florístería Valdi" src="imagenes/solo_logo.png" height="70" width="110"> </a>
-
-                    </div>
-
-                </div>   
-                
-            </div>
-        </div>
-
-        <!-- SCRIPT con todas las FUNCIONES QUE HACEN FUNCIONAR AL FORMULARIO -->
-
-<script>
-    	if(window.addEventListener){
-			window.addEventListener("load", setUpPagina, false);
-		} else if (window.attachEvent){
-			window.attachEvent("onload", setUpPagina);	
-		}
-
-    	function personalizado()
-	    {
-		    var mensaje = document.getElementById('check1').checked;
-		    if(mensaje)
-		    {
-			    document.getElementById('txMensaje').disabled=false;
-			    document.getElementById('mensajes1').disabled=true;
-				 document.getElementById('mensajes1').checked=false;
-			    document.getElementById('mensajes2').disabled=true;
-			    document.getElementById('mensajes2').checked=false;
-			    document.getElementById('mensajes3').disabled=true;
-			    document.getElementById('mensajes3').checked=false;
-			    document.getElementById('mensajes4').disabled=true;
-			    document.getElementById('mensajes4').checked=false;
-		    }
-		    else
-		    {
-			    document.getElementById('txMensaje').disabled=true;
-			    document.getElementById('txMensaje').value = "";
-			    document.getElementById('mensajes1').disabled=false;
-			    document.getElementById('mensajes2').disabled=false;
-			    document.getElementById('mensajes3').disabled=false;
-			    document.getElementById('mensajes4').disabled=false;			    
-		    }
-	    }
-	    
-	    function copiarFactura()
-	    {
-	    	var dirFactura = document.getElementById('check2').checked;
-			if(dirFactura)
-			{
-				document.getElementById('nombre2').value = document.getElementById('nombre').value;
-				document.getElementById('apellidos2').value = document.getElementById('apellidos').value;
-				document.getElementById('domicilio2').value = document.getElementById('domicilio').value;
-				document.getElementById('cpostal2').value = document.getElementById('cpostal').value;
-				document.getElementById('provincias2').selectedIndex = document.getElementById('provincias').selectedIndex;
-				document.getElementById('ciudad2').value = document.getElementById('ciudad').value;
-				document.getElementById('telefono2').value = document.getElementById('telefono').value;
-
-				document.getElementById('nombre2').disabled=true;
-				document.getElementById('apellidos2').disabled=true;
-				document.getElementById('domicilio2').disabled=true;
-				document.getElementById('cpostal2').disabled=true;
-				document.getElementById('provincias2').disabled=true;
-				document.getElementById('ciudad2').disabled=true;
-				document.getElementById('telefono2').disabled=true;
-			} else
-			{
-				document.getElementById('nombre2').disabled=false;
-				document.getElementById('apellidos2').disabled=false;
-				document.getElementById('domicilio2').disabled=false;
-				document.getElementById('cpostal2').disabled=false;
-				document.getElementById('provincias2').disabled=false;
-				document.getElementById('ciudad2').disabled=false;
-				document.getElementById('telefono2').disabled=false;
-			}
-	    }
-	    
-	    function cargarDias() {
-	    	for (i=1; i<29; i++) {
-	    		var option = document.createElement("option");
-				option.text = i;
-				option.value = i;
-				var select = document.getElementById("diaEntrega");
-				select.appendChild(option);
-	    	}
-	    }
-	    
-	    function actualizarDias() {
-	    	var diaEntrega = document.getElementById("diaEntrega");
-	    	var mesEntrega = document.getElementById("mesEntrega");
-	    	var yearEntrega = document.getElementById("yearEntrega");
-	    	var mesSeleccion = mesEntrega.options[mesEntrega.selectedIndex].value;
-	    	var fechas = diaEntrega.getElementsByTagName("option");
-	    	while (fechas[28])
-			{
-				diaEntrega.removeChild(fechas[28]);
-			}
-			if (yearEntrega.selectedIndex === -1) {
-				yearEntrega.selectedIndex = 0;
-			}
-	    	if (mesSeleccion === "2" && yearEntrega.options[yearEntrega.selectedIndex].value === "2018") {
-	    		var option = document.createElement("option");
-				option.text = 29;
-				option.value = 29;
-				var select = document.getElementById("diaEntrega");
-				select.appendChild(option);
-	    	} else if (mesSeleccion === "1" || mesSeleccion === "3" || mesSeleccion === "5" || mesSeleccion === "7" || mesSeleccion === "8" || mesSeleccion === "10" || mesSeleccion === "12") {
-	    		var option = document.createElement("option");
-				option.text = 29;
-				option.value = 29;
-				var select = document.getElementById("diaEntrega");
-				select.appendChild(option);
-				option = document.createElement("option");
-				option.text = 30;
-				option.value = 30;
-				select = document.getElementById("diaEntrega");
-				select.appendChild(option);
-				option = document.createElement("option");
-				option.text = 31;
-				option.value = 31;
-				select = document.getElementById("diaEntrega");
-				select.appendChild(option);
-	    	} else if (mesSeleccion === "4" || mesSeleccion === "6" || mesSeleccion === "9" || mesSeleccion === "11") {
-	    		var option = document.createElement("option");
-				option.text = 29;
-				option.value = 29;
-				var select = document.getElementById("diaEntrega");
-				select.appendChild(option);
-				option = document.createElement("option");
-				option.text = 30;
-				option.value = 30;
-				select = document.getElementById("diaEntrega");
-				select.appendChild(option);
-	    	}
-	    }
-	    
-	    function removerValoresSelected() {
-			var selectVacias = document.getElementsByTagName("select");
-			for(var i=0; i < selectVacias.length; i++){
-				selectVacias[i].selectedIndex = -1;	
-			}
-		}
-		
-		function setUpPagina() {
-			removerValoresSelected();
-			cargarDias();
-		}	
-    </script>
-
-    <script>
-
-            function validar() {
-
-                var text_1=document.getElementById("password1").value;
-                var text_2=document.getElementById("password2").value;
-
-                if (text_1==text_2) {
-
-
-                    window.alert("Ya eres de la FAMILIA!");
-                    form1.submit();
-
-                }
-
-                else {
-
-                     window.alert("Revisa tu contraseña!");
-                     
-                }
-
-            }
-
-        </script>
-
-        <script>
-
-               function hacer_pedido(){
-
-                   window.alert("¡Tus flores van EN CAMINO!");
-               }
-
-            </script>
-    
 
     </body>
 </html>
