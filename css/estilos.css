@@ -1,0 +1,302 @@
+body{
+
+    font-family: 'Raleway', sans-serif;
+}
+
+#contenedor_ppal{
+
+    margin: 0 auto;
+    width: 100%;
+    /* border: 2px solid red; */
+     font-family: 'Raleway', sans-serif;
+     background: repeating-linear-gradient(0deg,#c18dbe,white);
+     
+}
+
+#contenedor{
+
+    margin: 0 auto;
+    width: 100%;
+    /* border: 2px solid red; */
+     font-family: 'Raleway', sans-serif;
+     
+     
+}
+
+header{
+
+    background-image: url("https://swatgeneration.files.wordpress.com/2013/06/lipoescultura-fondo-morado-degradado1-e1358463541765.png");
+
+}
+
+main{
+
+    
+}
+
+footer{
+
+    background-image: url("https://swatgeneration.files.wordpress.com/2013/06/lipoescultura-fondo-morado-degradado1-e1358463541765.png");
+    border: 2px solid darkslateblue;
+    margin-top: 4em;
+}
+
+.top{
+
+    width: 90%;
+    /*border: 2px solid blue;*/
+    margin-left: 4em;
+
+}
+
+.logo{
+
+    float: left;
+    margin-left: 29em;
+
+}
+
+
+.contacto{
+
+    float: left;
+    margin-left: 12em;
+    margin-top: 2.5em;
+    /*border: 2px solid orangered;*/
+    font-size: 14px;
+    font-style: italic;
+
+}
+
+.barra_nav{
+
+    width: 80%;
+    border: 2px solid darkslateblue;
+    margin-left: 9em;
+    border-radius: 10px;
+}
+
+  .borde {
+         
+   border-right:1px solid darkslateblue; 
+   padding: 8px 21px;
+
+    }
+
+.borde_cuenta{
+
+    padding: 8px 21px;
+
+}
+
+.mensajes{
+
+    width: 80%;
+    float: left;
+    margin-left: 9.2em;
+
+}
+
+.solo_mensajes{
+
+    width: 80%;
+    float: left;
+    margin-top: 5em;
+    margin-left: 9.2em;
+
+}
+
+a:hover{
+
+    color: darkred;
+}
+
+legend{
+
+    color: darkslateblue;
+    font-size: 20px;
+    
+}
+
+h2{
+
+    color: darkslateblue;
+
+}
+
+button{
+
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 20px;
+    background-color: #c18dbe;
+    border-radius: 5px;
+}
+
+ .facturacion{
+
+        width: 80%;
+        float: left;
+        margin-top: 5em;
+        margin-left: 9.2em;
+
+ }
+
+ .dir_envio{
+
+        width: 80%;
+        float: left;
+        margin-top: 5em;
+        margin-left: 9.2em;
+
+ }
+
+ .borde_fecha{
+   
+        border-right:1px solid transparent; 
+        height: 6px; 
+        margin-left: 10.5em;
+        margin-right: 0em;
+        padding: 5px 9px;
+
+    }
+ 
+ .forma_pago{
+
+        width: 80%;
+        float: left;
+        margin-top: 5em;
+        margin-left: 9.2em;
+
+ }
+
+ .fecha_envio{
+
+      width: 80%;
+      float: left;
+      margin-top: 5em;
+      margin-left: 9.2em;
+
+ }
+
+.caducidad{
+
+    margin-left: 3em;
+
+}
+
+.frase{
+
+    width: 60%;
+    margin-left: 17em;
+    margin-top: 5em;
+
+}
+
+.crear{
+
+    text-align: center;
+    border-bottom: 3px double darkslateblue;
+}
+
+.hacer_pedido{
+
+    width: 30%;
+    margin-left: 17em;
+
+}
+
+.boton_pedido:hover{
+
+    background-color: darkslateblue;
+
+}
+
+.boton_registro{
+
+    width: 30%;
+    margin-left: 17em;
+
+}
+
+.pie_facturacion{
+
+    width: 100%;
+    height: 95px;
+    margin-top: 28em;
+
+}
+
+.pie_ppal{
+
+    width: 100%;
+    height: 98px;
+   
+}
+
+.pie_mensajes{
+
+    width: 100%;
+    height: 95px;
+    
+}
+
+
+.pie_envio{
+
+    width: 100%;
+    height: 95px;
+    margin-top: 39em;
+}
+
+.pie_fecha{
+
+    width: 100%;
+    height: 95px;
+    margin-top: 18em;
+}
+
+.pie_pago{
+
+    width: 100%;
+    height: 95px;
+    margin-top: 36em;
+}
+
+.pie_cuenta{
+
+    width: 100%;
+    height: 95px;
+    margin-top: 7em;
+}
+
+.rrss{
+
+    float: left;
+    margin-left: 2em;
+    margin-top: 1.3em;
+    padding: 6px 1px;
+    border: 5px outset #429bae;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 13%;
+    text-align: center;
+
+}
+
+.copyright{
+
+    float: left;
+    margin-left: 13em;
+    margin-top: 2em;
+    font-size: 13px;
+
+}
+
+.solo_logo{
+
+    float: left;
+    margin-left: 13em;
+    margin-top: 0.7em;
+    
+}
